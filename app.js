@@ -220,11 +220,29 @@
 // button. If you click on a button to delete a record, entire row should be
 // deleted.
 
-// function dlt(params) {
-    // var element = document.getElementById("dlt");
-// element.style.display="none"
+// function dlt(index) {
+//     document.getElementsByClassName("list")[index].style.display = "none";
+// }
+
+// method 2
+// 
+// const data = ["John","Irfan","Imran","Mehak"]
+// 
+// function render() {
+    // var innerHtml = "";
+    // for (var i = 0; i < data.length; i++) {
+        // innerHtml += `<div>${i}  ${data[i]}   40 <button onClick="dlt(${i})">Delete</button>   </div> `;
+    // }
+    // document.getElementById("list-container").innerHTML = innerHtml;
 // }
 // 
+// function dlt(i) {
+    // data.splice(i,1);
+    // render();
+// }
+// 
+// render();
+//
 
 // 4. Display an image in browser. Change the picture on mouseover and set the
 // first picture on mouseout.
@@ -244,3 +262,6 @@
 //     number--
 //     int.value =number
 // }
+
+
+
